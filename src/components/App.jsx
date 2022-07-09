@@ -2,6 +2,8 @@ import "./App.css";
 import Header from "./Header";
 import AddContact from "./AddContact";
 import ContactList from "./ContactList";
+import Negar from "./Negar";
+
 
 function App() {
 
@@ -18,12 +20,14 @@ function App() {
     },
   ];
 
-
   return (
-  <><Header />
-    <AddContact />
-    <ContactList contacts={contacts} /> </>
-    );
+    <>
+      <Negar />
+      <Header />
+      <AddContact />
+      <ContactList contacts={contacts} />
+    </>
+  );
 }
 
 export default App;
