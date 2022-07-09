@@ -1,14 +1,20 @@
-import { List } from '@mantine/core';
-import { Text } from '@mantine/core';
+import { Avatar } from '@mantine/core';
+import { Button } from '@mantine/core';
 
 const ContactCard = (props) => {
 
-  const { name, email } = props.contact;
+  const { id, name, email } = props.contact;
 
-  return (<List><Text size="xl" >
-    <List.Item>{name}</List.Item>
-    <List.Item>{email}</List.Item>
-  </Text></List>
+  return (
+    <div style={{ display: 'flex' }}>
+      <Avatar src="avatar.png" alt="it's me" />
+      <div>
+        <div style={{ fontSize: 28 }}>{name}</div>
+        <div style={{ fontSize: 20 }}>{email}</div>
+
+        <Button color="red" radius="xl">delete</Button>
+      </div>
+    </div>
   );
 }
 

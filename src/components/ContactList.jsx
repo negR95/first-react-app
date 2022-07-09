@@ -11,7 +11,7 @@ const ContactList = (props) => {
   })
 
   return (
-    <div>
+    <div >
       <Text weight={500} size="xl" >
         <h2>Contact List</h2>
       </Text>
