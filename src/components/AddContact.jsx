@@ -1,6 +1,4 @@
-import { Input } from '@mantine/core';
-import { Text } from '@mantine/core';
-import { Button } from '@mantine/core';
+import { Button, Input, Text } from '@mantine/core';
 
 
 class AddContact extends React.Component {
@@ -21,14 +19,14 @@ class AddContact extends React.Component {
             <Text weight={500} size="xl" >
               <label htmlFor="">Name</label>
             </Text>
-            <Input variant="default" placeholder="Name" size='lg' />
+            <Input variant="default" placeholder="Name" size='lg' value={this.state.name} onChange={(event) => { this.setState({ name: event.target.value }) }} />
           </div>
 
           <div style={{ marginTop: "20px" }}>
             <Text weight={500} size="xl" >
               <label htmlFor="">Email</label>
             </Text>
-            <Input variant="default" placeholder="Email" size='lg' />
+            <Input variant="default" placeholder="Email" size='lg' value={this.state.email} onChange={(event) => { this.setState({ email: event.target.value }) }} />
           </div>
 
 

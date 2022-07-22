@@ -1,15 +1,15 @@
-import { Text } from '@mantine/core';
+import React from "react";
 
-const Header = () => {
-  return (
-    <div>
-      <div>
-        <Text weight={500} size="xl" align="center" >
-          <h2>Contact Manager</h2>
-        </Text>
-      </div>
-    </div>
-  );
+class Header extends React.Component {
+  
+  render() {
+    return (
+      <>
+        <h1>Hi Im Negar!</h1>
+      </>
+    );
+  }
 }
 
-export default Header;
+
+export default Header;  
